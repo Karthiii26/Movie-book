@@ -1,0 +1,121 @@
+.show-selection {
+    padding-top: 20px;
+}
+
+.admin-warning-banner {
+    background: rgba(255, 171, 0, 0.1);
+    border: 1px solid rgba(255, 171, 0, 0.3);
+    padding: 15px 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    color: #ffab00;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.admin-warning-banner strong {
+    color: #ffc400;
+}
+
+.page-header {
+    margin-bottom: 40px;
+}
+
+.movie-meta {
+    display: flex;
+    gap: 15px;
+    color: var(--text-dim);
+    margin-top: 5px;
+}
+
+.theatre-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.theatre-card {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .theatre-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.theatre-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.theatre-info p {
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.showtimes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.show-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: 100px;
+}
+
+.show-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.show-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+}
+
+.show-screen {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.show-btn:hover .show-screen {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.price {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.show-btn:hover .price {
+    color: #fff;
+}
+
+.no-shows {
+    text-align: center;
+    padding: 100px;
+    color: var(--text-dim);
+}

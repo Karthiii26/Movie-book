@@ -1,0 +1,144 @@
+.seat-selection {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selection-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.selection-header p {
+    color: var(--text-dim);
+}
+
+.screen-container {
+    width: 80%;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.screen-curve {
+    height: 10px;
+    width: 100%;
+    background: var(--accent);
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 -10px 30px var(--accent);
+    margin-bottom: 15px;
+}
+
+.screen-container p {
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    color: var(--text-dim);
+}
+
+.seats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.seat-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.row-label {
+    width: 25px;
+    color: var(--text-dim);
+    font-weight: 700;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-dim);
+}
+
+.seat:not(:disabled):hover {
+    background: var(--glass);
+    border-color: #fff;
+}
+
+.seat.selected {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #fff;
+}
+
+.seat.booked {
+    background: var(--glass-border);
+    color: transparent;
+    cursor: not-allowed;
+}
+
+.legend {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+.seat-sample {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+}
+
+.seat-sample.available {
+    border: 1px solid var(--glass-border);
+}
+
+.seat-sample.selected {
+    background: var(--primary);
+}
+
+.seat-sample.booked {
+    background: var(--glass-border);
+}
+
+.selection-footer {
+    position: fixed;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info p {
+    color: var(--text-dim);
+}
+
+.footer-info span {
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-info h3 {
+    color: var(--primary);
+    margin-bottom: 0;
+}
+
+.continue-btn {
+    padding: 12px 30px;
+}
